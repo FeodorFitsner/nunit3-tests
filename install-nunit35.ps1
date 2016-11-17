@@ -18,6 +18,6 @@ Move-Item "$nunitPath\addins\appveyor.addins" "$nunitPath\appveyor.addins"
 del $zipPath
 
 Remove-Path "$nunitPath\bin"
-Add-Path "$nunitPath"
+Add-SessionPath "$nunitPath"
 
 Write-Host "NUnit 3.5.0 installed" -ForegroundColor Green
