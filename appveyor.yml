@@ -3,6 +3,9 @@
 #only_commits:
 #  message: /build/
 
+install:
+- ps: .\install-nunit35.ps1
+
 build:
   verbosity: minimal
 
